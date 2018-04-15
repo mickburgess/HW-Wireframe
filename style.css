@@ -28,17 +28,14 @@ section, aside {
 article {
   color: #ebebeb;
   background: #777;
-  border-color: #777;
-  border-width: 25px;
-  border-style: solid;
-  margin-top: -20px;
-  border-top-width: 5px;
+  border: #777 25px solid;
+  border-top-width: 0;
   border-bottom-width: 5px;
-  /* position: absolute;
+  position: absolute;
   right: 5px;
   left: 5px;
   bottom: 5px;
-  */
+  
 }
 
 h1, p {
@@ -59,15 +56,13 @@ aside {
 
 section {
   width: 495px;
+  height: 325px;
   float: left;
+  overflow: auto;
+  position: relative;
   margin-right: 20px;
-  border-color: #ebebeb;
-  border-width: 10px;
-  border-style: solid;
-  overflow: visible;
-  padding-top: -20px;
-  /* position: relative;
-  */
+  border: #ebebeb 10px solid;
+  /*line-height:*/ 
 }
 
 footer {
