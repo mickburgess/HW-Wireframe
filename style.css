@@ -31,6 +31,9 @@ article {
   border: #777 25px solid;
   border-top-width: 0;
   border-bottom-width: 5px;
+  /*Position based off nearest ancestor that is not static.
+  Top, bottom, right, or left specifies offsets from the edges
+  of the containing block.*/
   position: absolute;
   right: 5px;
   left: 5px;
@@ -59,13 +62,14 @@ section {
   height: 325px;
   float: left;
   overflow: auto;
+  /*Position value is relative. Top, bottom, left and right specify offset from normal position.*/
   position: relative;
   margin-right: 20px;
   border: #ebebeb 10px solid;
-  /*line-height:*/ 
 }
 
 footer {
+  /* Used to stop float effect from occuring*/
   clear: both;
   padding: 25px;
 }
